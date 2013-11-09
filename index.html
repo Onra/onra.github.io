@@ -1,0 +1,19 @@
+---
+layout: default
+title: Arnaud Christ
+---
+
+<div id="home">
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <span class="date">{{ post.date | date: "%d %b" }}</span>
+      </li>
+      <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <span class="date">{{ post.date | date: "%d %b" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
