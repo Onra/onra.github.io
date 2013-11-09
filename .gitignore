@@ -1,2 +1,4 @@
 _site
-workspace.xml
+.idea/
+*.iml
+*.iws
