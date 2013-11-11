@@ -1,5 +1,24 @@
 /*****************************************************************************/
 /*
+/* Custom Fonts
+/*
+/*****************************************************************************/
+
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('./fonts/MonoSocialIconsFont-1.10.eot');
+    src: url('./fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+    url('./fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+    url('./fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('./fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*****************************************************************************/
+/*
 /* Common
 /*
 /*****************************************************************************/
@@ -10,7 +29,10 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
+html, body {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
 
 body {
   background-color: #FFF;
@@ -126,7 +148,7 @@ header ul.menu li i.icon-blog {
     height: 22px;
 }
 
-header div.separator {
+div.separator {
     width: 170px;
     margin: 40px auto;
     height: 1px;
@@ -217,7 +239,7 @@ ul.posts {
 }
 
 ul.posts li {
-    border-bottom: 1px #eee;
+    border-bottom: 1px #eee solid;
     list-style-type: none;
     font-size: 18px;
     padding: 13px 0;
@@ -226,6 +248,10 @@ ul.posts li {
     -ms-transition: 0.15s ease;
     -o-transition: 0.15s ease;
     transition: 0.15s ease;
+}
+
+ul.posts li:last-child {
+    border: 0;
 }
 
 ul.posts li a {
@@ -259,4 +285,33 @@ ul.posts li span.date {
 
 #post pre.terminal code {
   background-color: #333;
+}
+
+footer {
+    width: 620px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+footer ul {
+    display: block;
+    margin: 0 auto;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+    font-family: Mono Social Icons Font;
+}
+
+footer ul li a.symbol {
+    transition: color 0.25s ease-in;
+    -webkit-transition: color 0.25s ease-in;
+    font-size: 30px;
+    color: #4c4c4c;
+}
+
+footer ul li a:hover {
+    color: #307EA9;
 }
