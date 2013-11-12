@@ -83,18 +83,13 @@ ul.posts span {
 /* Header
 /*
 /*****************************************************************************/
-header img.header-image {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-}
-
 header h1.name {
-    margin-top: 25px;
+    padding-top: 35px;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
     color: #4c4c4c;
+    clear: both;
 }
 
 header a {
@@ -153,6 +148,59 @@ div.separator {
     margin: 40px auto;
     height: 1px;
     background: #e8e8e8;
+}
+
+div.box {
+    cursor: pointer;
+    height: 170px;
+    float: left;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 620px;
+}
+
+div.box img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+div.box .caption {
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    left: 50%;
+}
+
+div.box .simple-caption {
+    height: 30px;
+    width: 220px;
+    display: block;
+    bottom: -30px;
+    line-height: 25pt;
+    text-align: center;
+}
+
+div.box:hover .simple-caption {
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+div.box .simple-caption p {
+    margin: 0;
 }
 
 /*****************************************************************************/
