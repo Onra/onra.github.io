@@ -180,12 +180,12 @@ div.box .caption {
     -o-transition: all 300ms ease-out;
     -ms-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
-    left: 50%;
+    left: 40%;
 }
 
 div.box .simple-caption {
     height: 30px;
-    width: 220px;
+    width: 250px;
     display: block;
     bottom: -30px;
     line-height: 25pt;
