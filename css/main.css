@@ -31,6 +31,7 @@
 
 html, body {
     height: 100%;
+    color: #2c3e50;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -50,8 +51,12 @@ p { margin: 1em 0; }
 a {
     color: #307EA9;
     text-decoration: none;
+    transition: color 0.25s ease-in;
+    -webkit-transition: color 0.25s ease-in;
 }
-a:hover   { color: #000; }
+a:hover {
+    color: #2c3e50;
+}
 
 table {
   font-size: inherit;
@@ -232,7 +237,7 @@ div.box .simple-caption p {
 }
 
 .site .header h1.title a:hover {
-  color: #000;
+  color: #2c3e50;
 }
 
 .site .header a.extra {
@@ -241,7 +246,7 @@ div.box .simple-caption p {
 }
 
 .site .header a.extra:hover {
-  color: #000;
+  color: #2c3e50;
 }
 
 .site .meta {
@@ -333,6 +338,10 @@ ul.posts li span.date {
 
 #post pre.terminal code {
   background-color: #333;
+}
+
+#disqus_thread {
+    margin-top: 50px;
 }
 
 
