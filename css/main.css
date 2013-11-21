@@ -63,6 +63,17 @@ table {
   font: 100%;
 }
 
+.clear {
+    clear: both;
+}
+
+.symbol {
+    position: relative;
+    font-family: Mono Social Icons Font;
+    font-size: 30px;
+    top: 3px;
+}
+
 /*****************************************************************************/
 /*
 /* Home
@@ -359,6 +370,26 @@ ul.posts li span.date {
 
 .photos .photo h1 {
     color: #7f8c8d;
+}
+
+
+/*****************************************************************************/
+/*
+/* About
+/*
+/*****************************************************************************/
+#about section {
+    margin: 0 auto;
+    clear: both;
+}
+
+#about section img {
+    float: left;
+}
+
+#about section .content {
+    width: 300px;
+    float: right;
 }
 
 /*****************************************************************************/
