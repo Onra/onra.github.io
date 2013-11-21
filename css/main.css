@@ -94,6 +94,13 @@ ul.posts span {
   font-size: 80%;
 }
 
+#home h2 {
+    font-weight: bold;
+    font-size: 14px;
+    color: #999999;
+    margin-left: 20px;
+}
+
 /*****************************************************************************/
 /*
 /* Header
@@ -312,6 +319,10 @@ ul.posts li {
     -ms-transition: 0.15s ease;
     -o-transition: 0.15s ease;
     transition: 0.15s ease;
+}
+
+ul.posts li:hover {
+    margin-left: 10px;
 }
 
 ul.posts li:last-child {
