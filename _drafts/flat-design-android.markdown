@@ -5,29 +5,22 @@ date:   2013-11-12 16:26:26
 categories: jekyll update
 ---
 
-Comme vous le savez probablement, le Flat Design est un sujet à la mode depuis quelques mois.
-Pas un site de web/mobile design n'y a échappé.
 
-Récemment, l'équipe de Designmodo a proposé un excellent <a href="http://designmodo.com/flat/" title="Flat UI Pro" target="_blank">thème Twitter
-Bootstrap</a> entièrement Flat Design. Avec ça, même le plus mauvais des designers arrive à créer un site web ressemblant
-à quelque chose en un temps respectable.
+Si vous êtes un utilisateur d’Android, vous devez probablement connaître l’excellente/indispensable application Android File Transfer. Cette petite app vous permet de gérer les fichiers qui sont sur votre device comme vous le feriez avec une clé USB.
 
-As you probably know, Flat Design is a trending topic in recent months.
+Mais tout n’est pas rose au pays des Bisounours. Cette application a la sale petite manie de se lancer automatiquement à chaque fois que vous branchez votre device. Si comme moi, il vous arrive de brancher votre device juste pour développer ou encore pour le recharger, vous n’avez probablement pas envie de voir cette app se lancer automatiquement à chaque fois.
+Voici donc la démarche à effectuer pour désactiver tout ça :
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+<br />
 
-Jekyll also offers powerful support for code snippets:
+  1. Fermez l’application
+  2. Lancez Activity Monitor et killez le process correspondant à Android File Transfer
+  3. Rendez vous dans le dossier où est installé Android File Transfer.app (/Applications généralement)
+  4. Clic droit sur le package et Show package contents
+  5. Allez dans le dossier Contents/Resources
+  6. Renommez Android File Transfer Agent en Android File Transfer Agent_STOPIT
+  7. Allez dans /Users/username/Library/Application Support/Google/Android File Transfer et renommez à nouveau l’agent
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+<br />
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+Et voilà ! L’application ne se lancera plus automatiquement à chaque branchement du device mais restera accessible comme une application classique.

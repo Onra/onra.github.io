@@ -42,11 +42,28 @@ body {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.title {
+    padding: 10px 10px 10px 23px;
+    border-left: 7px solid #eee;
+    margin: 40px -30px 30px -30px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    margin: 50px -30px 20px -30px;
+    padding: 10px 30px 10px 25px;
+    border-left: 5px solid #eee;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h3, h4, h5, h6 {
   font-size: 100%; }
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+p { margin-top: 1em; }
 
 a {
     color: #307EA9;
@@ -99,6 +116,9 @@ ul.posts span {
     font-size: 14px;
     color: #999999;
     margin-left: 20px;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 /*****************************************************************************/
@@ -175,12 +195,20 @@ div.separator {
 
 div.box {
     cursor: pointer;
-    height: 170px;
-    float: left;
-    margin: 5px;
+    height: 70px;
+    /*margin: 5px;*/
     position: relative;
     overflow: hidden;
-    width: 620px;
+    /*background-color: #cccccc;*/
+    color: #34495e;
+    padding-top: 50px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+/*display: inline-block;
+line-height: 72px;
+margin-bottom: 20px;*/
 }
 
 div.box img {
@@ -233,11 +261,12 @@ div.box .simple-caption p {
 /*****************************************************************************/
 
 .site {
-  font-size: 115%;
+  font-size: 16px;
   text-align: justify;
-  width: 620px;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
+  max-width: 620px;
+  margin: 0 auto 2em;
+  line-height: 180%;
+  padding: 0 20px;
 }
 
 .site .header a {
@@ -306,7 +335,7 @@ div.box .simple-caption p {
 
 /* standard */
 ul.posts {
-    margin: 10px 0 20px 20px;
+    /* margin: 10px 0 20px 20px; */
 }
 
 ul.posts li {
