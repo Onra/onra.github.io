@@ -333,6 +333,11 @@ div.box .simple-caption p {
 /*
 /*****************************************************************************/
 
+div#post>ol>li {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
 /* standard */
 ul.posts {
     /* margin: 10px 0 20px 20px; */
@@ -348,6 +353,7 @@ ul.posts li {
     -ms-transition: 0.15s ease;
     -o-transition: 0.15s ease;
     transition: 0.15s ease;
+    text-align: left;
 }
 
 ul.posts li:hover {
