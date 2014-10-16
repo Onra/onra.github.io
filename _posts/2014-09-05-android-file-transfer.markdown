@@ -6,7 +6,7 @@ categories: android
 ---
 
 
-If you are an Android user, you probably know the pretty useful **Android File Transfer app**. It allows you to handle the files on your device as you would proceed with an USB key.
+If you are an Android user, you probably know the pretty useful **Android File Transfer app**. It allows you to handle files on your device as you would proceed with an USB key.
 
 ![Android File Transfer screenshot]({{ site.url }}/assets/posts/android_file_transfer/android_file_transfer.png)
 
